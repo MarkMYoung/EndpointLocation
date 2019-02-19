@@ -1,6 +1,6 @@
 {
 	"name":"endpointlocation",
-	"version":"1.0.0",
+	"version":"1.0.1",
 	"description":"A URL manipulation utility similar to the familiar `Location` interface (in `window`).",
 
 	"author":"Mark M. Young",
