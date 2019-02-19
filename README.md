@@ -17,7 +17,8 @@ request.get(
 			'User-Agent':'request',
 		},
 		// The convenience of `EndpointLocation`.
-		'url':clientEndpoint.href,// "https://example.com/path/to/endpoint?hash=of&url=parameters"
+		'url':clientEndpoint.href,
+		// "https://example.com/path/to/endpoint?hash=of&url=parameters"
 	},
 	function response_handler( error, httpResponse, responseText )
 	{});
