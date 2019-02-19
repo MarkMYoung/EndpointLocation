@@ -1,1 +1,1 @@
-module.exports.EndpointLocation = require('./src/EndpointLocation');
+module.exports = require('./src/EndpointLocation');
