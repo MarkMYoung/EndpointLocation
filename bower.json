@@ -1,0 +1,30 @@
+{
+	"name":"endpointlocation",
+	"description":"A URL manipulation utility similar to the familiar `Location` interface (in `window`).",
+
+	"authors":["Mark M. Young"],
+	"dependencies":{},
+	"ignore":
+	[
+		"**/.*",
+		"bower_components",
+		"node_modules",
+		"_notes"
+	],
+	"keywords":
+	[
+		"endpoint",
+		"URL",
+		"web service",
+		"window.location"
+	],
+	"license":"GPL-3.0",
+	"main":
+	[
+		"index.js"
+	],
+	"moduleType":
+	[
+		"globals"
+	]
+}
