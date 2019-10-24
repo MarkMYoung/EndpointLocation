@@ -5,7 +5,8 @@
  *	`Location`'s API only accepts a URL string (and another `Location` object 
  *	via `toString()`), but `EndpointLocation`'s API allows all that plus 
  *	"construction by configuration" and empty construction for convenience.
- * @version 1.1.0 (2019-02-20)
+ * @version 1.2.0 (2019-10-19)
+ *	1.1.0 (2019-02-20)
  * 	1.0.0 (2018-12-28)
  * @author Mark M. Young
  * @example
@@ -214,7 +215,7 @@ class EndpointLocation// extends Location
 			this.hash = endpointLocation.hash || this.hash;
 			this.hostname = endpointLocation.hostname || this.hostname;
 			this.params = endpointLocation.params
-				|| EndpointLocation.decodeSearchParameters( endpointLocation.search )
+				|| this.decodeSearchParameters( endpointLocation.search )
 				|| this.params;
 			this.pathname = endpointLocation.pathname || this.pathname;
 			this.port = endpointLocation.port || this.port;
@@ -233,7 +234,7 @@ class EndpointLocation// extends Location
 
 				this.hash = matches[ 8 ] || this.hash;
 				this.hostname = host_parts[ 0 ] || this.hostname;
-				this.params = EndpointLocation.decodeSearchParameters( matches[ 6 ]);
+				this.params = this.decodeSearchParameters( matches[ 6 ]);
 				this.pathname = matches[ 5 ] || this.pathname;
 				this.port = host_parts[ 1 ] || this.port;
 				this.protocol = matches[ 1 ] || this.protocol;
