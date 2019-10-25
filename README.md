@@ -21,7 +21,7 @@ request.get(
 		// "https://example.com/path/to/endpoint?hash=of&url=parameters"
 	},
 	function response_handler( error, httpResponse, responseText )
-	{});
-}));
+	{}
+);
 ```
 <b id="browser_location">1.</b> https://www.w3.org/TR/html50/browsers.html#the-location-interface
